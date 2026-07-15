@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 80">
-<g fill="none" stroke="#17202A" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
-<path d="M12 58V18l28 40V18"/><path d="M48 18l18 40 18-40"/></g>
-<g fill="#17202A" font-family="Arial"><text x="100" y="34" font-size="17" letter-spacing="5">NORDIC VANTAGE</text>
-<text x="145" y="58" font-size="13" letter-spacing="4">AB</text></g>
-<line x1="102" y1="46" x2="136" y2="46" stroke="#B89C74" stroke-width="2"/>
-<line x1="171" y1="46" x2="205" y2="46" stroke="#B89C74" stroke-width="2"/></svg>

@@ -1,9 +1,14 @@
-# Nordic Vantage AB — approved design
+# Nordic Vantage AB — approved concept reconstruction
 
-1. Extract the ZIP.
+This package uses the exact generated NV logo and mountain artwork extracted from the approved mockup.
+
+## Publish
+
+1. Extract this ZIP.
 2. In GitHub Desktop choose Repository → Show in Finder.
-3. Replace the old files with all files and the entire `assets` folder from this package.
-4. Commit: `Approved Nordic Vantage design`
-5. Push origin.
+3. Replace the current website files with everything in this package.
+4. Keep the `assets` folder next to `index.html`.
+5. Commit: `Approved exact concept`
+6. Push origin.
 
-Keep the `assets` folder next to `index.html`.
+Cloudflare Pages will redeploy automatically.
