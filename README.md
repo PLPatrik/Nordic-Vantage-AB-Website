@@ -1,15 +1,12 @@
-# Nordic Vantage AB — 2026 website
+This website is self-contained. The main design and logo are embedded directly inside index.html, so it cannot lose its stylesheet.
 
-This version replaces the previous plain website with a modern premium design.
+Replace all existing website files in your GitHub repository with:
+- index.html
+- privacy.html
+- terms.html
+- support.html
+- README.md
 
-## Publish
+Delete the old styles.css and script.js files if you want; they are no longer used.
 
-1. Extract this ZIP.
-2. Open GitHub Desktop.
-3. Choose Repository → Show in Finder.
-4. Replace the existing website files with these files.
-5. Return to GitHub Desktop.
-6. Commit with the summary: Modern 2026 website.
-7. Push origin.
-
-Cloudflare Pages will redeploy automatically.
+Then commit and push to main. Cloudflare Pages will redeploy automatically.
