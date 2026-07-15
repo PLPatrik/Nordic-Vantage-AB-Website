@@ -153,8 +153,8 @@ h1 span{color:var(--gold)}
 <body>
 <header>
   <a class="brand" href="#top"><img src="assets/logo-approved.png" alt="Nordic Vantage AB"></a>
-  <button class="menu" aria-expanded="false" aria-controls="navigation">Menu</button>
-  <nav id="navigation">
+  <button class="menu" type="button" aria-expanded="false" aria-controls="navigation">Menu</button>
+  <nav id="navigation" aria-label="Primary navigation">
     <a href="#about">About</a>
     <a href="#work">Approach</a>
     <a href="#work">Work</a>
@@ -179,19 +179,19 @@ h1 span{color:var(--gold)}
   <div class="kicker">What we do</div>
   <div class="grid">
     <article class="card">
-      <div class="symbol">&lt;/&gt;</div>
+      <div class="symbol" aria-hidden="true">&lt;/&gt;</div>
       <h2>Software</h2>
       <p>We design and build software that is reliable, maintainable and made to last.</p>
       <a href="mailto:contact@nordicvantage.se">Explore</a>
     </article>
     <article class="card">
-      <div class="symbol">□</div>
+      <div class="symbol" aria-hidden="true">□</div>
       <h2>Digital products</h2>
       <p>We create digital products that are intuitive, useful and user focused.</p>
       <a href="mailto:contact@nordicvantage.se">Explore</a>
     </article>
     <article class="card">
-      <div class="symbol">○</div>
+      <div class="symbol" aria-hidden="true">○</div>
       <h2>Technology</h2>
       <p>We provide guidance and technical expertise to help projects move forward.</p>
       <a href="mailto:contact@nordicvantage.se">Explore</a>
@@ -220,8 +220,13 @@ const n=document.querySelector('#navigation');
 b.addEventListener('click',()=>{
   const open=n.classList.toggle('open');
   b.setAttribute('aria-expanded',String(open));
+  b.textContent=open ? 'Close' : 'Menu';
 });
-n.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>n.classList.remove('open')));
+n.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+  n.classList.remove('open');
+  b.setAttribute('aria-expanded','false');
+  b.textContent='Menu';
+}));
 document.querySelector('#year').textContent=new Date().getFullYear();
 </script>
 </body>
