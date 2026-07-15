@@ -1,7 +1,15 @@
-This version removes the organisation number, street address and telephone number.
+# Nordic Vantage AB — 2026 website
 
-Publish it by replacing the files in your existing local GitHub repository, then:
-1. Commit to main
-2. Push origin
+This version replaces the previous plain website with a modern premium design.
 
-Cloudflare Pages will update automatically.
+## Publish
+
+1. Extract this ZIP.
+2. Open GitHub Desktop.
+3. Choose Repository → Show in Finder.
+4. Replace the existing website files with these files.
+5. Return to GitHub Desktop.
+6. Commit with the summary: Modern 2026 website.
+7. Push origin.
+
+Cloudflare Pages will redeploy automatically.
